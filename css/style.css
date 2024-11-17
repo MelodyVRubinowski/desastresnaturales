@@ -13,16 +13,20 @@ body {
 }
 
 .navbar-brand, .nav-link {
-    color: #fff !important;
+    color: #fff ;
 }
 
 .nav-link:hover {
-    color: #F0EBE3 !important; /* Color pastel en hover */
+    color: #F0EBE3;
 }
 
-/* Estilos de Banner */
+.font-a{
+    font-size: 1.4rem;
+   }
+
+
 .banner {
-    background-color: #93BFCF; /* Color pastel */
+    background-color: #134050; 
     color: #fff;
     padding: 120px 0;
     text-align: center;
@@ -56,10 +60,10 @@ body {
 
 /* Botones */
 .btn-primary {
-    background-color: #93BFCF; /* Color pastel */
+    background-color: #125063; /* Color pastel */
     border-color: #93BFCF;
     color: #fff;
-    padding: 12px 30px;
+    padding: 12px 20px;
     font-size: 1.1rem;
     text-transform: uppercase;
     border-radius: 5px;
@@ -127,7 +131,7 @@ footer {
     }
 
     .social-icons a {
-        font-size: 18px;
+        font-size: 12px;
         margin: 0 10px;
     }
 }
