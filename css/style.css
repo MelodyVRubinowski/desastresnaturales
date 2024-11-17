@@ -101,6 +101,15 @@ footer {
 .container {
     margin-top: 50px;
 }
+.social-icons a {
+    font-size: 14px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+
 
 @media (max-width: 768px) {
     .banner h1, .banner h2 {
@@ -118,7 +127,7 @@ footer {
     }
 
     .social-icons a {
-        font-size: 28px;
+        font-size: 18px;
         margin: 0 10px;
     }
 }
