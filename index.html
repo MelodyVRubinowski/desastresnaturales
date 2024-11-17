@@ -6,7 +6,6 @@
     <title>Guía Desastres Naturales</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +13,10 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Guía sobre Desastres Naturales</a>
-          </button>
+            <!-- Botón para el menú en dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -25,90 +27,79 @@
             </div>
         </div>
     </nav>
-    
 
-       <section class="container my-5 text-center">
+    <!-- Contenido Principal -->
+    <section class="container my-5 text-center">
         <h2 class="text-center mb-4">Qué Debemos Saber y Cómo Actuar en un Clima Cambiante</h2>
-            
         <p class="text-center mb-5">
-                Los desastres naturales son eventos extremos o catastróficos que ocurren debido a procesos naturales de la Tierra, como terremotos, tsunamis, huracanes, tornados, inundaciones, deslizamientos de tierra, erupciones volcánicas y sequías.<br> Estos fenómenos pueden provocar daños devastadores a la vida humana, la propiedad y el medio ambiente.
-            </p>
-            
-            <h3><i class="fas fa-house-damage">
-            
-            La preparación adecuada y la capacidad de respuesta ante emergencias pueden salvar vidas y reducir los daños causados por estos desastres.
-        </h3>
-            
-            
-            <div class="text-center">
-                <a href="tipos.html" class="btn btn-primary btn-lg mt-3">Tipos de Desastres</a>
-            </div>
-        </section>
-        
-       
-            <div id="carouselDesastres" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/terremoto.jpg" class="d-block w-100" alt="Imagen de un terremoto">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Terremotos</h5>
-                        <p>Movimientos sísmicos de alta magnitud.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/huracan.jpeg" class="d-block w-100" alt="Imagen de un huracán">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Huracanes</h5>
-                        <p>Tormentas intensas con vientos fuertes y lluvias.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/incendio.jpeg" class="d-block w-100" alt="Imagen de un incendio forestal">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Incendios Forestales</h5>
-                        <p>Incendios que afectan grandes áreas de vegetación.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesastres" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselDesastres" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+            Los desastres naturales son eventos extremos o catastróficos que ocurren debido a procesos naturales de la Tierra, como terremotos, tsunamis, huracanes, tornados, inundaciones, deslizamientos de tierra, erupciones volcánicas y sequías.<br> Estos fenómenos pueden provocar daños devastadores a la vida humana, la propiedad y el medio ambiente.
+        </p>
+        <h3>La preparación adecuada y la capacidad de respuesta ante emergencias pueden salvar vidas y reducir los daños causados por estos desastres.</h3>
+        <div class="text-center">
+            <a href="tipos.html" class="btn btn-primary btn-lg mt-3">Tipos de Desastres</a>
         </div>
     </section>
 
-
-  <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-       <!-- Enlaces a redes sociales -->
-       <div class="social-icons mt-3">
-        <a href="https://www.facebook.com/tu_perfil" target="_blank" class="text-white mx-2">
-            <i class="bi bi-facebook"></i> Facebook
-        </a>
-        <a href="https://twitter.com/tu_perfil" target="_blank" class="text-white mx-2">
-            <i class="bi bi-twitter"></i> Twitter
-        </a>
-        <a href="https://www.instagram.com/tu_perfil" target="_blank" class="text-white mx-2">
-            <i class="bi bi-instagram"></i> Instagram
-        </a>
-        <a href="https://wa.me/50662906751" target="_blank" class="text-white mx-2">
-            <i class="bi bi-whatsapp"></i> WhatsApp
-        </a>
+    <!-- Carousel -->
+    <div id="carouselDesastres" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/terremoto.jpg" class="d-block w-100" alt="Imagen de un terremoto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Terremotos</h5>
+                    <p>Movimientos sísmicos de alta magnitud.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/huracan.jpeg" class="d-block w-100" alt="Imagen de un huracán">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Huracanes</h5>
+                    <p>Tormentas intensas con vientos fuertes y lluvias.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/incendio.jpeg" class="d-block w-100" alt="Imagen de un incendio forestal">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Incendios Forestales</h5>
+                    <p>Incendios que afectan grandes áreas de vegetación.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDesastres" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDesastres" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
-        <p><br>Teléfono: (506) 1111 1111</p>
-        
-        <p>e-mail: <a href="mailto:cce_torito@gmail.com" class="text-white">cce_torito@gmail.com</a></p>
-        <p>© Comisión Comunal de Emergencias - El Torito, Pueblo Nuevo y Matapalo <br> Playa Sámara, Nicoya, Guanacaste</p>
-      
-        
-    </div>
-</footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <!-- Enlaces a redes sociales -->
+            <div class="social-icons mt-3">
+                <a href="https://www.facebook.com/tu_perfil" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-facebook"></i> Facebook
+                </a>
+                <a href="https://twitter.com/tu_perfil" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-twitter"></i> Twitter
+                </a>
+                <a href="https://www.instagram.com/tu_perfil" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-instagram"></i> Instagram
+                </a>
+                <a href="https://wa.me/50662906751" target="_blank" class="text-white mx-2">
+                    <i class="bi bi-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+            <p><br>Teléfono: (506) 1111 1111</p>
+            <p>Email: <a href="mailto:cce_torito@gmail.com" class="text-white">cce_torito@gmail.com</a></p>
+            <p>© Comisión Comunal de Emergencias - El Torito, Pueblo Nuevo y Matapalo <br> Playa Sámara, Nicoya, Guanacaste</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

@@ -108,7 +108,7 @@ footer {
     }
 
     .carousel-inner img {
-        height: 250px; /* Ajuste de altura para móviles */
+        height: 200px; /* Ajuste de altura para móviles */
     }
 
     .btn-primary {
