@@ -39,10 +39,10 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .carousel-inner img {
-    height: 300px; /* Ajuste de altura para imágenes más pequeñas */
-    max-width: 50%; /* Limita el ancho a un tercio de la pantalla */
-    margin: 0 auto; /* Centra el carrusel */
-    display: block; /* Asegura que la imagen se comporta como un bloque */
+    height: 300px; 
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
