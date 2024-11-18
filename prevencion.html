@@ -139,31 +139,43 @@
     <h3 class="text-center">¿Tienes preguntas o sugerencias? ¿Necesitas ayuda? Contáctanos</h3>
     <form action="enviar-consulta.php" method="post">
       <div class="mb-3">
-        <label for="name" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="name" name="name" required>
-      </div>
-      <div class="mb-3">
-        <label for="telefono" class="form-label">Teléfono</label>
-        <input type="text" class="form-control" id="telefono" name="telefono" required>
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Correo Electrónico</label>
-        <input type="email" class="form-control" id="email" name="email" required>
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Mensaje</label>
-        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary w-100">Enviar</button>
-    </form>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required 
+                   minlength="3" maxlength="50" pattern="[a-zA-Z\s]+" 
+                   title="El nombre debe contener solo letras y espacios, y tener entre 3 y 50 caracteres.">
+          </div>
+        
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" required 
+                   pattern="^\+?\d{8,15}$" 
+                   title="El teléfono debe contener entre 8 y 15 dígitos y puede incluir un signo '+' al inicio.">
+          </div>
+        
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" required
+                   title="Por favor, ingrese un correo electrónico válido.">
+          </div>
+        
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required 
+                      minlength="10" maxlength="500" 
+                      title="El mensaje debe tener entre 10 y 500 caracteres."></textarea>
+          </div>
+        
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        
   </div>
 </div>
 
 
-  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <div class="container">
-      <!-- Social Media Links -->
       <div class="social-icons mt-3">
         <a href="https://www.facebook.com/tu_perfil" target="_blank" class="text-white mx-2">
           <i class="bi bi-facebook"></i> Facebook
