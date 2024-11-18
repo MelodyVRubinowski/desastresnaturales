@@ -131,7 +131,7 @@ footer {
 
 @media (max-width: 768px) {
     .carousel-inner img {
-        max-height: 400px; 
+        max-height: 480px; 
     }
 
     .carousel-caption {
@@ -144,12 +144,11 @@ footer {
 @media (max-width: 480px) {
     .carousel-inner img {
         width: 100%;
-        height: auto; 
+        height: 80vh; 
     }
     .carousel-caption {
         font-size: 1.3rem;
-        width: 90%; 
-      
+        width: 80%; 
         padding: 15px;
     }
 }
