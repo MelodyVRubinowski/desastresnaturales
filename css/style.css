@@ -140,9 +140,9 @@ footer {
 
 @media (max-width: 480px) {
     .carousel-inner img {
-        max-height: 140px;
+        width: 100%;
+        height: auto; 
     }
-
     .carousel-caption {
         font-size: 0.5rem;
         width: 90%; 
